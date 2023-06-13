@@ -5,7 +5,7 @@ export const StudySelector = component$(() => {
   return (
     <>
       <div class={styles['container']}>
-      <h1>Study selector</h1>
+        <span>Toon informatie voor opleiding:</span>
       </div>
     </>
   );

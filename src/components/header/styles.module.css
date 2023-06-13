@@ -1,5 +1,64 @@
 .container {
-  /* height: 98px; */
+  display: flex;
+  flex-direction: column;
   height: 9.8rem;
-  background: #f2f2f2;
+  padding-top: 2rem;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+}
+
+.information {
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.information span {
+  color: #bc0031;
+  font-weight: bold;
+  margin-left: 0.4rem;
+}
+
+.icons {
+  display: flex;
+  margin-left: auto;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  background: #d5d5d5;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.language {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+svg {
+  width: 30.356rem;
 }
