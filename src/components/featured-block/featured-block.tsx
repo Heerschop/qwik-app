@@ -1,19 +1,6 @@
 import { component$, useSignal, useVisibleTask$ } from '@builder.io/qwik';
 import styles from './styles.module.css';
-
-// 944x434
-type Item = { text: string; image: string };
-
-const FeatureItem = component$(({ text, image }: Item) => {
-  return (
-    <div class={styles['feature-container']}>
-      <div class={styles['feature-item']}>
-        <img src={image}></img>
-        <div>{text}</div>
-      </div>
-    </div>
-  );
-});
+import { Featured, Item } from '../featured/featured';
 
 export const FeaturedBlock = component$(() => {
   const items = useSignal<Item[]>([]);
@@ -55,10 +42,8 @@ export const FeaturedBlock = component$(() => {
         <h1>Welkom op student.uva.nl</h1>
         <h2>Op student.uva.nl vind je praktische informatie over alles rond je studie.</h2>
       </div>
-      <div class={styles['featured']}>
-        {items.value.map(({ text, image }) => {
-          return <FeatureItem text={text} image={image}></FeatureItem>;
-        })}
+      <div class={styles['featured-container']}>
+        <Featured items={items.value} />
       </div>
     </div>
   );

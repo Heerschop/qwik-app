@@ -1,5 +1,20 @@
 .container {
-  height: 55.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0rem;
+  height: 58.2rem;
   margin-top: 0.8rem;
   background: #F6F5F3;
+  padding: 1.6rem;
+}
+
+.label {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+  font-family: utopia-std, serif;
+}
+.link {
+  margin-left: auto;
+  font-size: 1.8rem;
+  font-family: utopia-std, serif;
 }

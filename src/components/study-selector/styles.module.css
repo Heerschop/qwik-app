@@ -7,3 +7,67 @@
   font-size: 1.6rem;
   padding: 1.6rem 2.4rem;
 }
+
+.selector-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.selector-container > button {
+  display: flex;
+  flex-direction: row;
+  padding: 0.4rem;
+  height: 3rem;
+  background: #ffffff;
+
+  border: 0.1rem solid #000000;
+  width: 20rem;
+  align-items: center;
+
+  height: 3rem;
+  width: 32rem;
+  cursor: pointer;
+}
+
+.selector-container > button:hover {
+  background: #dbebef;
+}
+
+.selector-container > div {
+  position: absolute;
+  z-index: 2;
+  margin-top: 3rem;
+  width: 32rem;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  padding: 0.1rem;
+  border: 0.1rem solid #696969;
+  max-height: 30rem;
+  overflow-y: scroll;
+}
+
+.selector-container > div > ul {
+  display: flex;
+  flex-direction: column;
+}
+.selector-container > div > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+.selector-container > div > ul > li:hover {
+  list-style-type: none;
+  background: #dbebef;
+}
+
+.selector-container > button > svg {
+  margin-left: auto;
+  height: 2rem;
+  width: 2.5rem;
+}
+
+.selector-container > button > div {
+  margin-left: 0.5rem;
+}
