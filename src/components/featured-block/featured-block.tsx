@@ -6,18 +6,23 @@ type Item = { text: string; image: string };
 
 const FeatureItem = component$(({ text, image }: Item) => {
   return (
-    <div class={styles['feature-item']}>
-      <img src={image}></img>
-      <div>{text}</div>
+    <div class={styles['feature-container']}>
+      <div class={styles['feature-item']}>
+        <img src={image}></img>
+        <div>{text}</div>
+      </div>
     </div>
   );
 });
 
 export const FeaturedBlock = component$(() => {
   const items = useSignal<Item[]>([]);
+  const visible = useSignal(false);
 
   useVisibleTask$(() => {
-    console.log('Featured Block');
+    console.log('Visible: Featured Block');
+
+    visible.value = true;
 
     items.value = [
       {
@@ -45,7 +50,7 @@ export const FeaturedBlock = component$(() => {
 
   return (
     <div class={styles['container']}>
-      <img src='/featured-block.jpg' alt='header-background-image'></img>
+      <div>{visible.value && <img src='/featured-block.jpg' alt='header-background-image'></img>}</div>
       <div class={styles['text']}>
         <h1>Welkom op student.uva.nl</h1>
         <h2>Op student.uva.nl vind je praktische informatie over alles rond je studie.</h2>
