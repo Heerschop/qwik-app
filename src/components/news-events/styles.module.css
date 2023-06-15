@@ -18,3 +18,9 @@
   font-size: 1.8rem;
   font-family: utopia-std, serif;
 }
+
+.featured-container {
+  overflow-y: hidden;
+
+  height: 19.2rem;
+}

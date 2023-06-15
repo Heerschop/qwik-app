@@ -1,10 +1,20 @@
 .container {
   display: flex;
   flex-direction: row;
-  padding: 2rem;
-  height: 45.2rem;
+  padding: 2.5rem;
+  min-height: 45.2rem;
   margin-top: 0.8rem;
   background: #f0f5f8;
+  font-size: 1.8rem;
+  font-family: utopia-std, serif;
+  line-height: 3rem;
+  gap: 4rem;
+}
+
+@media (max-width: 944px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .left {
@@ -24,11 +34,97 @@
   font-size: 2rem;
   font-family: utopia-std, serif;
 }
-.text {
-  font-size: 1.8rem;
-  font-family: utopia-std, serif;
-}
 
 .right {
+  display: flex;
+  flex-direction: column;
   width: 50%;
+  gap: 2rem;
+}
+
+.contact {
+  margin-top: 6rem;
+  width: 44.2rem;
+  height: 8.4rem;
+  background: #ffffff;
+  font-family: Source Sans Pro;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.balloon {
+  width: 5.3rem;
+  height: 4.4rem;
+  margin: 2rem;
+  color: rgb(14, 78, 167);
+}
+.arrow {
+  width: 1.7rem;
+  height: 1.4rem;
+  margin: 2rem;
+}
+
+.info {
+  font-size: 2.2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem;
+  gap: 0rem;
+}
+
+.info-buttons button {
+  background: transparent;
+  font-size: 1.8rem;
+  font-family: Source Sans Pro;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  line-height: 4rem;
+  padding: 1rem;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  
+}
+.button-content {
+  font-size: 1.8rem;
+  font-family: Source Sans Pro;
+  background: #ffffff;
+  padding: 2rem;
+  font-weight: normal;
+  line-height: 3rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.button-content button
+{
+  background: #dbebef;
+  border: 1px solid #0e4ea7;
+  color: #0e4ea7;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.info-buttons svg {
+  margin-left: auto;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.info-buttons hr {
+  border: 1px solid #aaaaaa;
 }
