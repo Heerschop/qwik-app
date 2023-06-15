@@ -1,19 +1,13 @@
 .container {
   display: flex;
   flex-direction: row;
-  min-height: 55.5rem;
   margin-top: 0.8rem;
   gap: 1rem;
 }
 
-@media (max-width: 944px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
 
 .topics {
+  min-height: 55.5rem;
   display: flex;
   flex-direction: column;
   background: #f6f5f3;
@@ -27,6 +21,7 @@
 }
 
 .apps {
+  min-height: 55.5rem;
   display: flex;
   flex-direction: column;
   background: #f6f5f3;
@@ -38,6 +33,19 @@
   padding: 2rem;
   gap: 1rem;
 }
+@media (max-width: 944px) {
+  .container {
+    flex-direction: column;
+  }
+  .topics{
+    min-height: fit-content;
+  }
+  .apps {
+    min-height: fit-content;
+    
+  }
+}
+
 
 .apps-items {
   display: flex;
