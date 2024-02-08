@@ -1,0 +1,98 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.8rem;
+  gap: 1rem;
+}
+
+
+.topics {
+  min-height: 55.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #f6f5f3;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-family: utopia-std, serif;
+  font-weight: bold;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.apps {
+  min-height: 55.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #f6f5f3;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-family: utopia-std, serif;
+  font-weight: bold;
+  padding: 2rem;
+  gap: 1rem;
+}
+@media (max-width: 944px) {
+  .container {
+    flex-direction: column;
+  }
+  .topics{
+    min-height: fit-content;
+  }
+  .apps {
+    min-height: fit-content;
+    
+  }
+}
+
+
+.apps-items {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.apps-item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  font-family: Source Sans Pro;
+  font-size: 1.6rem;
+  align-items: center;
+  justify-content: center;
+  width: 20.6rem;
+  font-weight: normal;
+  padding: 1.5rem;
+}
+.apps-item img {
+  height: 5rem;
+}
+
+.topics-footer {
+  margin-top: auto;
+  margin-left: auto;
+  font-family: Source Sans Pro;
+  font-weight: bold;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  gap: 1rem;
+}
+.items div {
+  font-size: 1.6rem;
+  gap: 0.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  background: #ffffff;
+}
+.items div svg {
+  height: 1.8rem;
+  width: 1.8rem;
+}

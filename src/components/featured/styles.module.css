@@ -1,0 +1,32 @@
+.featured {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.feature-container {
+  background: #f6f5f3;
+  padding: 1rem;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  width: 19.6rem;
+  height: 17.2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0.25rem 0.5rem;
+}
+.feature-item img {
+  height: 8rem;
+}
+
+.feature-item div {
+  padding: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.feature-item:hover {
+  transform: scale(1.05, 1.05);
+  transition-duration: 250ms;
+}

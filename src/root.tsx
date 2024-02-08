@@ -15,11 +15,16 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <head>
-        <meta charSet="utf-8" />
-        <link rel="manifest" href="/manifest.json" />
+        <meta charSet='utf-8' />
+        <link rel='manifest' href='/manifest.json' />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap'
+          rel='stylesheet'
+        />
+
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang='en'>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>
